@@ -35,11 +35,11 @@
         </div>
         <div class="d-flex justify-between mb-10 fw-600">
             <p>Caisse d’affiliation</p>
-            <div><input type="checkbox" name="" id="input1">
-                <label for="input1">CNSS</label></div>
-                <div>
-                    <input type="checkbox" name="" id="">
-                    <label for="input1">CNRPS</label>
+            <div class="control"><input type="checkbox" name="" id="one">
+                <label for="one">CNSS</label></div>
+                <div class="control">
+                    <input class="test" type="checkbox" name="" id="two">
+                    <label for="two">CNRPS</label>
                 </div>
                 <p>صندوق الانخراط</p>
                 
@@ -97,31 +97,44 @@
             <div class="d-flex justify-between bc-blue clr-white"><h3>LE BENEFICIAIRE</h3>
                 <h3>المنتفع     </h3></div>
                 
-                <div class="d-flex justify-between">
+                <div class="grid-three justify-between">
                     <p>
                         L’ASSURE SOCIAL</p>
-                        <input type="checkbox">
-                        <p>المضمون الاجتماعي</p>
+                        <div class="control txt-center">
+                            <input type="checkbox" id="three">
+                            <label for="three"></label>
+                        </div>
+                        
+                        <p class="txt-end">المضمون الاجتماعي</p>
                     </div>
-                    <div class="d-flex justify-between mb-5">
+                    <div class="grid-three justify-between mb-5">
                         <p>LE CONJOINT</p>
-                        <input type="checkbox">
-                        <p>القرين</p>
+                        <div class="control txt-center">
+                            <input type="checkbox" id="four">
+                            <label for="four"></label>
+                        </div>
+                        <p class="txt-end">القرين</p>
                     </div>
-                    <div class="d-flex justify-between mb-5">
+                    <div class="grid-three justify-between mb-5">
                         <p>L’ENFANT*</p>
-                        <input type="checkbox">
-                        <p>*الابن</p>
+                        <div class="control txt-center">
+                            <input type="checkbox" id="five">
+                            <label for="five"></label>
+                        </div>
+                        <p class="txt-end">*الابن</p>
                     </div>
-                    <div class="d-flex justify-between mb-5">
+                    <div class="grid-three justify-between mb-5">
                         <p>L’ASCENDANT**</p>
-                        <input type="checkbox">
-                        <p>**الاب والام</p>
+                        <div class="control txt-center">
+                            <input type="checkbox" id="seven">
+                            <label for="seven"></label>
+                        </div>
+                        <p class="txt-end">**الاب والام</p>
                     </div>
                     <div class="d-flex justify-between">
                         <p>*Le 1<sup>er </sup>  Enfant = 1, 2<sup>ème</sup>  enfant = 2, 3<sup>ème</sup> enfant = 3 …etc         </p>
                         
-                        <p>الابن الاول =1  الثاني =2 الثالث=3 الخ 
+                        <p>...الابن الاول =1  الثاني =2 الثالث=3 الخ 
                         </p>
             </div>
             <div class="d-flex justify-between">
@@ -156,26 +169,37 @@
     <div class="container">
         <h1>RESERVE AU MEDECIN CONSEIL</h1>
         <div class="Demande mb-20">
-            <div>
-                <input type="checkbox"><label for="">Demande intiale</label>
+            
+            <div class="control">
+                <input type="checkbox" id="eight">
+                <label for="eight">Demande intiale</label>
             </div>
-            <div>
-                <input type="checkbox"><label for="">Renouvlement</label>
+            <div class="control">
+                <input type="checkbox" id="nine">
+                <label for="nine">Renouvlement</label>
             </div>
         </div>
         <div class="Favorbale">
-            <input class="check" type="checkbox"><label style="font-weight: bold;" for="">Favorbale</label>
+            
+            <div class="control">
+                <input type="checkbox" id="ten">
+                <label for="ten" style="font-weight: bold;">Favorbale</label>
+            </div>
             <div class="PriseDecharge">
             <h4>Prise en charge de </h4>
             <div>
-                <div>
-                <input class="check" type="checkbox"><label for="">Reeducation fonctionnelle</label>
+            
+            <div class="control">
+                <input type="checkbox" id="elven">
+                <label for="elven" style="">Reeducation fonctionnelle</label>
             </div>
             <div class="name">
                 <label for="">au centre</label><input placeholder="....................................." type="text">
             </div>
-                <div>
-                <input class="check" type="checkbox"><label for="">Kinesiherapie</label>
+            
+            <div class="control">
+                <input type="checkbox" id="tweleve">
+                <label for="tweleve" style="">Kinesiherapie</label>
             </div>
             </div>
             
@@ -190,7 +214,11 @@
             </div>
         </div>
         <div class="Defavorbale">
-            <input class="check" type="checkbox"><label for="">Defavorbale</label>
+            
+            <div class="control">
+                <input type="checkbox" id="thirteen">
+                <label for="thirteen" style="">Defavorbale</label>
+            </div>
             <div>
             <h4 for="">Motifs:</h4>
             <textarea placeholder=".............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................." name="" id="" cols="40" rows="7"></textarea>
@@ -202,7 +230,7 @@
         </div>
         <div class="date">
             <div>
-            <label for="">Date:</label><input type="date">
+            <label for="">Date:</label><input  type="date">
         </div>
             <h3>Signature</h3>
         </div>
@@ -221,9 +249,9 @@
             <div class="d-flex mb-20"><p style="flex: 1 0 50%;">Identifiant unique ou numéro d’assuré social:</p>
             <div class="d-flex iden-2"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"></div></div>
             <p>nécessite une prise en charge de rééducation fonctionnelle dans un</p>
-            <div class="d-flex" style="margin-left: 70px;"><input class="mr-10" type="checkbox" name="" id=""><p>Centre de rééducation fonctionnelle dirigé par un médecin </p></div>
+            <div class="d-flex control" style="margin-left: 70px;"><input class="mr-10 " type="checkbox" name="" id="fourteen"><label for="fourteen">Centre de rééducation fonctionnelle dirigé par un médecin </label></div>
             <p style="margin-left: 40px;">physique </p>
-            <div class="d-flex" style="margin-left: 70px;"><input class="mr-10" type="checkbox" name="" id=""><p>Cabinet de physiothérapeute </p></div>
+            <div class="d-flex control" style="margin-left: 70px;"><input class="mr-10" type="checkbox" name="" id="fiveteen"><label for="fiveteen">Cabinet de physiothérapeute </label></div>
             <div class="d-flex mb-10">
                 <p>pour une durée de</p>
                 <input class="bd-none"  placeholder="............................................." type="text"><p>jours à compter du</p>
@@ -239,27 +267,41 @@
                 </p>
             </div>
             <div class="d-flex" style="justify-content: space-evenly;">
-                <div class="d-flex"><input class="mr-10" type="checkbox" name="" id=""><p>Demande initiale </p></div>
-                <div class="d-flex"><input class="mr-10" type="checkbox" name="" id=""><p>Renouvellement</p></div>
+                <div class="d-flex control"><input class="mr-10" type="checkbox" name="" id="sixteen"><label for="sixteen">Demande initiale </label></div>
+                
+                <div class="d-flex control"><input class="mr-10" type="checkbox" name="" id="seventeen"><label for="seventeen">Renouvellement</label></div>
             </div>
             <p>et ce à la suite de (pathologie à l’origine du déficit et sa date de début)</p>
             <textarea class="mb-20" placeholder=".............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................." name="" id="" cols="40" rows="7"></textarea>
             <div class="d-flex justify-center ">
                 <label class="mr-10 " style="min-width: 350px;">APCI </label>
                 <input type="checkbox" name="" id="">
+                <div class="control">
+                    <input type="checkbox" id="eighteen">
+                    <label for="eighteen" style=""></label>
+                </div>
             </div>
             <div class="d-flex justify-center ">
                 <label class="mr-10 " style="min-width: 350px;">Accident de travail ou maladie professionnelle</label>
-                <input type="checkbox" name="" id="">
+                <div class="control">
+                    <input type="checkbox" id="nineteen">
+                    <label for="nineteen" style=""></label>
+                </div>
             </div>
             <div class="d-flex justify-center ">
                 <label class="mr-10 " style="min-width: 350px;">Accident de la circulation 
                 </label>
-                <input type="checkbox" name="" id="">
+                <div class="control">
+                    <input type="checkbox" id="tweeny">
+                    <label for="tweeny" style=""></label>
+                </div>
             </div>
             <div class="d-flex justify-center ">
                 <label class="mr-10 " style="min-width: 350px;">Autre …………………………………………..</label>
-                <input type="checkbox" name="" id="">
+                <div class="control">
+                    <input type="checkbox" id="tweenyone">
+                    <label for="tweenyone" style=""></label>
+                </div>
             </div>
 
         </div>
